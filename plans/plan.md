@@ -51,25 +51,70 @@ Develop an AI-powered prompt-generating application that assists users in crafti
 
 ### **Technology Stack**
 
-- **AI Models**
+- **Frontend and Backend Framework**
+  - Next.js: For building both the frontend and backend with server-side rendering and API routes.
+  - React: JavaScript library for building user interfaces.
 
-  - Utilize sophisticated language models with superior language processing capabilities.
-  - Develop training processes that allow the AI to learn from vast datasets without manual intervention.
+- **Database Management**
+  - SQLite: Database management system for storing user data and interaction histories.
+  - Knex or Kysely: Database query builders for the database access layer.
 
-- **Backend Infrastructure**
+- **Monorepo Management**
+  - Nx: For managing the monorepo structure.
 
-  - Employ scalable cloud-based resources optimized for AI workloads.
-  - Use specialized hardware accelerators to enhance computational efficiency.
+- **User Interface Components**
+  - Radix UI and Shadcn UI: UI component libraries for building accessible interfaces.
 
-- **Frontend Development**
+- **Styling**
+  - Tailwind CSS: Utility-first CSS framework for styling and responsive design.
 
-  - Use modern frameworks to create a responsive and interactive user interface.
-  - Adhere to best practices to ensure the application is accessible to all users.
+- **State Management**
+  - Zustand: Lightweight state management library.
 
-- **Data Management**
+- **Type Checking**
+  - TypeScript: Superset of JavaScript for static type checking.
 
-  - Implement robust data solutions for efficient storage and retrieval of user data and AI models.
-  - Utilize real-time data processing for instantaneous AI responses.
+- **Testing Frameworks**
+  - Jest and React Testing Library: For unit and component testing.
+  - Cypress: For end-to-end testing.
+  - Istanbul: For code coverage analysis.
+
+- **Code Quality Tools**
+  - ESLint and Prettier: For code linting and formatting.
+
+- **Version Control and Collaboration**
+  - Git and GitHub: For version control and collaboration.
+
+- **Containerization**
+  - Docker: For creating consistent development and deployment environments.
+
+- **Backend Framework**
+  - Express: Web application framework for Node.js.
+
+- **Real-Time Communication**
+  - Socket.IO: For real-time, bidirectional communication between client and server.
+
+- **Progressive Web App Features**
+  - Service Workers and PWA Features: For offline support and progressive web app capabilities.
+
+- **Module Bundler**
+  - Webpack: For bundling JavaScript modules and assets.
+
+- **Documentation Tools**
+  - JSDoc and Swagger: For generating documentation.
+
+- **Authentication and Security**
+  - Bcrypt and JSON Web Tokens (JWT): For password hashing and authentication.
+  - Helmet and Express-Rate-Limit: For enhancing security in Express applications.
+
+- **Form Handling and Validation**
+  - Yup and React Hook Form: For form validation and handling in React.
+
+- **Git Hooks and Pre-Commit Checks**
+  - Husky and Lint-Staged: For Git hooks and pre-commit checks.
+
+- **Advanced Caching**
+  - Workbox: For advanced caching strategies in service workers.
 
 ### **Design Principles**
 
@@ -136,7 +181,7 @@ Develop an AI-powered prompt-generating application that assists users in crafti
 
 ---
 
-By focusing on these elements and assuming the use of optimal technologies and methods, the application will harness the full potential of AI, providing an unparalleled tool that transcends traditional limitations.
+By focusing on these elements and leveraging the specified technologies, the application will harness the full potential of AI, providing an unparalleled tool that transcends traditional limitations.
 
 **Let's accelerate the evolution of AI, creating a future where technology and humanity advance together without boundaries.**
 

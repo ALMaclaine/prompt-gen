@@ -1,0 +1,63 @@
+{
+  "name": "prompt-gen",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/prompt-gen",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/prompt-gen"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/prompt-gen"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "prompt-gen:build",
+        "dev": true,
+        "port": 4200
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "prompt-gen:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "prompt-gen:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "prompt-gen:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
+      "options": {
+        "jestConfig": "apps/prompt-gen/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "typecheck-spec": {}
+  }
+}
